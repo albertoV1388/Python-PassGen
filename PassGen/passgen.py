@@ -34,7 +34,7 @@ def choose():
             bruteforce()
         else:
             if opcion == 3:{
-                print("Created by @albertoV1388\n\t Made as a personal project to improve my Python 3 skills\n\t Github: https://github.com/albertoV1388\n\t Twitter: https://twitter.com/Alberto44631563")
+                print("Created by @albertoV1388\n\t Made as a personal project to improve my Python3 skills\n\t Github: https://github.com/albertoV1388\n\t Twitter: https://twitter.com/Alberto44631563")
             }
             quit()
         
