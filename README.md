@@ -21,7 +21,7 @@ Este script permite generar diccionarios con contraseñas de una manera bastante
     pip install "Nombre de la dependencia"
     
  # Ejecución del Script:
-   python __main__.py
+    python __main__.py
   
   # Objetivos:
    Mejorar mi habilidad con Python3
