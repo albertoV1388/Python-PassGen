@@ -6,7 +6,7 @@ Python Dictionary Password Generator
 
 Este script permite generar diccionarios con contraseñas de una manera bastante sencilla
  
- #Dependencias:
+ # Dependencias:
     PkgUtil,
     traceback,
     turtle,
