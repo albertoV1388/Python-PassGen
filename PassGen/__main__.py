@@ -1,5 +1,5 @@
-# Password Generator
-# Written in Python
+# Python Password Generator
+# PassGen V0.0.1 Alpha
 from tkinter import CENTER, Y
 import passgen
 import pyfiglet
