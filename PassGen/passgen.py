@@ -1,5 +1,5 @@
 # Python Password Generator
-# PassGen V0.0.1 Alpha
+# PassGen V0.0.2 Alpha
 from pkgutil import ImpImporter
 from traceback import print_tb
 from turtle import position
@@ -9,6 +9,7 @@ import variables
 import time
 import string
 import random
+import os
 def warning():
     print(Fore.RED + "This tool has been created for educational purposes,\n I am not responsible for any damage caused by it.\nUse it at your own risk \nYou agree to make good use of this tool")
     risk = input("Are You agree? (y/n):")
@@ -66,7 +67,8 @@ def bruteforce():
             print("\n\tAlfanumeric digits")
             number_of_strings = int(input("Enter quantity of passwords to Gen: "))
             length_of_string = int(input("Enter password length: "))
-            generatedpasswords = open("Passwords.txt", "w")
+            passfolder = input("Enter the directory where you want to save the passwords.txt file. Example: /home/alberto/Passwords.txt\n\t Enter Directory: ")
+            generatedpasswords = open(passfolder, "w")
             print(number_of_strings)
             print(length_of_string)
             print("Generating...")
@@ -76,18 +78,21 @@ def bruteforce():
                 generatedpasswords.write("\n")
             print("Number of passwords generated: ", x+1)
             print("Passwords Generated!!")
-            print("The passwords are save on Passwords.txt")
+            print("The passwords are save on:", passfolder)
+            time.sleep(10)
             quit()
             
 def numberpass():
     number_of_strings = int(input("Enter quantity of passwords to Gen: "))
     length_of_string = int(input("Enter password length: "))
-    generatedpasswords = open("Passwords.txt", "w")
+    passfolder = input("Enter the directory where you want to save the passwords.txt file. Example: /home/alberto/Passwords.txt\n\t Enter Directory: ")
+    generatedpasswords = open(passfolder, "w")
     for x in range(number_of_strings):
             generatedpasswords.write(''.join(random.choice(string.digits) for _ in range(length_of_string)))
             generatedpasswords.write("\n")
     print("Number of passwords generated: ", x+1)
     print("Passwords Generated!!")
-    print("The passwords are save on Passwords.txt")
+    print("The passwords are save on:", passfolder)
+    time.sleep(10)
     quit()
     

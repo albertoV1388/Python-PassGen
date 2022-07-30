@@ -1,5 +1,5 @@
 # Python Password Generator
-# PassGen V0.0.1 Alpha
+# PassGen V0.0.2 Alpha
 from tkinter import CENTER, Y
 import passgen
 import pyfiglet
